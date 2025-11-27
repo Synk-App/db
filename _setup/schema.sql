@@ -82,7 +82,7 @@ DROP TABLE IF EXISTS `integration_credential`;
 CREATE TABLE `integration_credential` (
   `int_credential_id` int unsigned NOT NULL AUTO_INCREMENT,
   `int_credential_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
-  `int_credential_type` enum('twitter','linkedin','instagram') CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `int_credential_type` enum('discord','telegram') CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
   `int_credential_config` json NOT NULL,
   `user_id` int unsigned NOT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
